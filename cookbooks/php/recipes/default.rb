@@ -11,7 +11,7 @@ else
   raise '未対応のバージョンです'
 end
 
-%w{php}.each do |pkg|
+%w{php php-curl php-mbstring php-mcrypt php-mysqlnd php-opcache}.each do |pkg|
   package pkg do
     options option
     action :install
